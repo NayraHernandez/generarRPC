@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="208dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,26 +22,136 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.552" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editNombre"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Escribe tu nombre"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="44dp" />
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="52dp" />
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/editA_Paterno"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="CURP"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="103dp" />
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <EditText
+        android:id="@+id/editA_Materno"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <EditText
+        android:id="@+id/editRFC"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="text"
+        tools:background="#82dafb"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <EditText
+        android:id="@+id/editHomo"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="121dp"
+        android:layout_height="51dp"
+        android:text="Fecha de Nacimiento"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RFC"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="113dp"
+        android:layout_height="31dp"
+        android:text="Homonimia"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:text="Apellido Materno"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="145dp"
+        android:layout_height="32dp"
+        android:text="Apellido Paterno"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="73dp"
+        android:layout_height="32dp"
+        android:text="Nombre"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <Button
+        android:id="@+id/btnGenerar"
+        android:layout_width="137dp"
+        android:layout_height="42dp"
+        android:onClick="GeneraRFC"
+        android:text="Generar RFC"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="171dp"
+        android:layout_height="45dp"
+        android:text="Limpiar campos"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="425dp" />
 
 </android.support.constraint.ConstraintLayout>
