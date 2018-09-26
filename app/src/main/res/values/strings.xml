@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">generarRPC</string>
+    <string name="app_name">generarRFC</string>
+    <string name="CampoObligatorio">Campo Obligatorio</string>
 </resources>
